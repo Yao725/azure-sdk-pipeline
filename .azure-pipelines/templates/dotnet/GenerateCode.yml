@@ -48,6 +48,7 @@ steps:
     fi
   displayName: 'Generate autorest.md'
 - bash: |
+    set -x
     declare -A resourceProviderMap
     resourceProviderMap["vmware"]="avs"
     resourceProviderMap["azure-kusto"]="kusto"
